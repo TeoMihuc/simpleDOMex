@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@font-face {
+    font-family: 'New Tegomin';
+    src: url('fonts/NewTegomin-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: 777;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-image: url("images/i1.jpg");
+    background-size: cover;
+    padding-block: 20px;
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
+
+.title-page {
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    font-family: 'New Tegomin';
+    color: rgb(255, 255, 255);
+}
+
+.hello-user {
+    text-align: center;
+    font-family: 'New Tegomin';
+    font-weight: bold;
+    color: white;
+}
+
+.clock {
+    background: white;
+    justify-content: right;
+    align-items: right;
+    border-radius: 100%;
+    text-align: center;
+    margin: auto 80%;
+    font-size: 20px;
+    padding: 15px;
+    height: 100px;
+    width: 100px;
+    color: rgb(170, 139, 94);
+}
+
+input[type=text] {
+    box-shadow: 0 0 15px 4px rgba(233, 170, 54, 0.06);
+    border-radius: 8px;
+}
+
+input,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    color: white;
+    background-color: rgb(114, 74, 46);
+}
+
+.formSection {
+    text-align: center;
+    margin: 20px;
+    border-radius: 50px;
+    background-color: rgb(231, 218, 197);
+}

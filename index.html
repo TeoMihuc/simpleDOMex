@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body onload="displayTime()">
+    <script src="jscode.js"></script>
+
+    <header class="main-header">
+        <h1 class="title-page">Hello user!</h1>
+
+        <section id="name" class="hello-user">
+            <label for="client_name">Would you like to share your name? </label>
+            <input type="text" id="client_name" name="client_name"><br>
+            <button id="submit_ans" onclick="displayNameFunct()">Hello to you!</button><br>
+            <p id="say_hello"></p>
+        </section>
+        <section id="age" class="hello-user">
+            <label for="client_age">Would you like to share your birth date?</label>
+            <input type="date" id="client_age" name="client_age"><br>
+            <button id="submit_age" onclick="ageCalc()">Age Calculator</button><br>
+            <p id="ageDisp"></p>
+        </section>
+
+        <div id="clock" class="clock">
+            <p id="dispTime" class="dispTime"></p>
+        </div>
+    </header>
+
+    <section id="formSection" class="formSection">
+        <p>Let me know more about you by completing this form:</p><br>
+        <form id="form_firstpage">
+            <label for="city">What is your favourite city?</label>
+            <input type="text" id="city" name="city"><br>
+
+            <label for="animal">Do you have a favourite animal?</label>
+            <select name="animal" id="selAnimal">
+                <option value="dog">Dogs</option>
+                <option value="cat">Cats</option>
+                <option value="reptile">Reptiles</option>
+                <option value="other" selected>Other</option>
+            </select>
+
+            <p>What best represents you?</p>
+            <select name="ocupation" id="selOccup">
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                <option value="stud_empl">Student and Employee</option>
+                <option value="none" selected>None represents me</option>
+            </select>
+
+            <p>What is your fav food?</p>
+            <input type="checkbox" name="food" value="Fruits">Fruits<br>
+            <input type="checkbox" name="food" value="fast-food">fast-food<br>
+            <input type="checkbox" name="food" value="sea-food">sea-food<br>
+
+            <p id="gender">What best describes you?</p>
+            <input type="radio" id="male" name="gender" value="male">Male<br>
+            <input type="radio" id="female" name="gender" value="female">Female<br>
+            <input type="radio" id="nogen" name="gender" value="none">None<br>
+            <input type="radio" id="othergen" name="gender" value="other">Other<br>
+        </form>
+
+        <button id="gen_desc" onclick="genDescription()">Generate my description!</button>
+        <p id="dispDescrip"></p>
+
+    </section>
+
+</body>
+
+</html>
