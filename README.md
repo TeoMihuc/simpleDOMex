@@ -1,2 +1,2 @@
 # simpleDOMex
-HTML, CSS, JS. Creating simple web app.
+Creating simple web app using HTML, CSS, JS.
